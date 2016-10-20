@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "content_scripts": [ {
+        "exclude_globs":    [  ],
+        "include_globs":    [ "*" ],
+        "js":               [ "cleanGoogleDrive.user.js" ],
+        "matches":          [
+          "https://drive.google.com/drive/*",
+          "http://drive.google.com/drive/*"
+        ],
+        "run_at": "document_end"
+    } ],
+    "converted_from_user_script": true,
+    "description":  "Remove columns from GDrive: Owner, Last modified, File size.",
+    "name":         "Clean Google Drive",
+    "version":      "1",
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+}
